@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/*Videos*/
+
+html{
+  scroll-snap-type: y mandatory;
+}
+.App{
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.app_videos{
+  position: relative;
+  height: 800px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 500px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.app_videos::-webkit-scrollbar{
+  display: none;
+}
+.app_videos{
+  -ms-overflow-style: none;
+  scrollbar-width:none;
+}
+
+.video{
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+}
+.video_player{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*Footer*/
+
+.footer{
+  position: relative;
+  color: white;
+  bottom: 150px;
+  margin-left: 40px;
+  display: flex;
+}
+.text{
+  flex: 1;
+}
+
+.text > p{
+  padding-bottom: 20px;
+}
+
+.text > h3{
+  padding-bottom: 20px;
+}
+
+.icon{
+  position: absolute;
+}
+.video_ticker > .ticker{
+  height: fit-content;
+  margin-left: 30px;
+  width: 60%;
+
+}
+
+.video_ticker h1{
+  padding-top: 7px;
+}
+
+.record{
+  animation: spinTheRecord infinite 5s linear;
+  height: 50px;
+  filter: invert(1);
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+@keyframes spinTheRecord {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+/*Sidebar*/
+
+.sidebar{
+  position: absolute;
+  top: 50%;
+  color: white;
+  right: 10px;
+}
+
+.sidebar_button{
+  padding: 20px;
+  text-align: center;
+}
