@@ -1,3 +1,3 @@
 MERN ile yapmış olduğum, bir tiktok clone projesi.
 
-demo: coder-tiktok.web.app
+demo: http://coder-tiktok.web.app
